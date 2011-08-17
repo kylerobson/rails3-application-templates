@@ -1,24 +1,3 @@
-# Application Generator Template
-# Modifies a Rails app to use Mongoid and Devise
-# Usage: rails new APP_NAME -m https://github.com/RailsApps/rails3-application-templates/raw/master/rails3-mongoid-devise-template.rb -T -O
-
-# Information and a tutorial: 
-# http://github.com/RailsApps/rails3-mongoid-devise/
-
-# Generated using the rails_apps_composer gem:
-# https://github.com/RailsApps/rails_apps_composer/
-
-# Based on application template recipes by:
-# Michael Bleigh https://github.com/mbleigh
-# Fletcher Nichol https://github.com/fnichol
-# Daniel Kehoe https://github.com/fortuity
-# Ramon Brooker https://github.com/cognition
-
-# If you are customizing this template, you can use any methods provided by Thor::Actions
-# http://rdoc.info/rdoc/wycats/thor/blob/f939a3e8a854616784cac1dcff04ef4f3ee5f7ff/Thor/Actions.html
-# and Rails::Generators::Actions
-# http://github.com/rails/rails/blob/master/railties/lib/rails/generators/actions.rb
-
 # >---------------------------------------------------------------------------<
 #
 #            _____       _ _   __          ___                  _ 
@@ -1388,6 +1367,10 @@ else
   recipes.delete('footnotes')
 end
 
+# >----------------------------------[ Custom Stuff ]-------------------------<
+
+gem 'thin'
+get "https://raw.github.com/kylerobson/rails3-application-templates/master/files/Procfile"
 
 # >----------------------------------[ Git ]----------------------------------<
 
