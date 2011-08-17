@@ -1369,6 +1369,7 @@ end
 
 # >----------------------------------[ Custom Stuff ]-------------------------<
 
+gem 'foreman'
 gem 'thin'
 get "https://raw.github.com/kylerobson/rails3-application-templates/master/files/Procfile"
 
